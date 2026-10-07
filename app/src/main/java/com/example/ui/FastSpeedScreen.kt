@@ -248,31 +248,18 @@ fun FastSpeedScreen(
                     onRestart = { viewModel.handleHeroButtonClick() }
                 )
 
-                Spacer(modifier = Modifier.height(32.dp))
-
-                // "Show more info" outlined rectangular button
-                ShowMoreInfoButton(
-                    isExpanded = state.isDetailsExpanded,
-                    language = state.language,
-                    isDark = state.isDarkMode,
-                    onClick = { viewModel.toggleDetailsExpanded() }
-                )
-
                 Spacer(modifier = Modifier.height(24.dp))
 
-                // Help Circle Button (?)
-                HelpCircleButton(
-                    onClick = { showHelpDialog = true },
-                    isDark = state.isDarkMode
-                )
-
-                Spacer(modifier = Modifier.height(20.dp))
+                val isTestActive = state.phase == TestPhase.CONNECTING || state.phase == TestPhase.TESTING_DOWNLOAD
+                val shouldShowDetails = !isTestActive && state.currentDisplaySpeed > 0
 
                 // Expanded Information Section (latency, upload, ISP, server)
+                // Automatically reveals with smooth animation as soon as test finishes/pauses,
+                // and automatically hides when testing is in progress!
                 AnimatedVisibility(
-                    visible = state.isDetailsExpanded,
-                    enter = fadeIn(tween(250)) + expandVertically(tween(350)),
-                    exit = fadeOut(tween(200)) + shrinkVertically(tween(250))
+                    visible = shouldShowDetails,
+                    enter = fadeIn(tween(400)) + expandVertically(tween(450)),
+                    exit = fadeOut(tween(250)) + shrinkVertically(tween(300))
                 ) {
                     DetailedInfoSection(
                         state = state,
