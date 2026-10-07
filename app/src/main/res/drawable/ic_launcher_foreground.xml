@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- SPEEDNEXT Velocity Acceleration Streaks (Speed lines) -->
+    <path
+        android:strokeColor="#66FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M 27 42 L 44 42" />
+
+    <path
+        android:strokeColor="#CCFF5722"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M 23 54 L 42 54" />
+
+    <path
+        android:strokeColor="#66FFFFFF"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M 29 66 L 45 66" />
+
+    <!-- First Velocity Chevron (White / Solid Silver) -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 44 33 L 59 54 L 44 75 L 52 75 L 67 54 L 52 33 Z" />
+
+    <!-- Second Supersonic Chevron (SPEEDNEXT Vibrant Red #E50914) -->
+    <path
+        android:fillColor="#E50914"
+        android:pathData="M 61 33 L 76 54 L 61 75 L 70 75 L 85 54 L 70 33 Z" />
+
+    <!-- Supersonic Energy Spark at Arrow Tip -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M 87 54 A 3 3 0 1 1 86.99 54 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 87 54 A 1.5 1.5 0 1 1 86.99 54 Z" />
+
+    <!-- Base Velocity Track Accent -->
+    <path
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M 38 82 L 72 82" />
+</vector>

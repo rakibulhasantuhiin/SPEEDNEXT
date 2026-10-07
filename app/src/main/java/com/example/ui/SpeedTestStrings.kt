@@ -1,0 +1,45 @@
+package com.example.ui
+
+object SpeedTestStrings {
+    fun title(lang: AppLanguage) = if (lang == AppLanguage.BN) "আপনার ইন্টারনেট গতি" else "Your Internet speed is"
+    fun showMore(lang: AppLanguage) = if (lang == AppLanguage.BN) "আরও তথ্য দেখুন (লোড মোর)" else "Show more info"
+    fun showLess(lang: AppLanguage) = if (lang == AppLanguage.BN) "কম তথ্য দেখুন" else "Show less info"
+    fun latency(lang: AppLanguage) = if (lang == AppLanguage.BN) "লেটেন্সি (Latency)" else "Latency"
+    fun unloaded(lang: AppLanguage) = if (lang == AppLanguage.BN) "আনলোডেড (Unloaded)" else "Unloaded"
+    fun loaded(lang: AppLanguage) = if (lang == AppLanguage.BN) "লোডেড (Loaded)" else "Loaded"
+    fun unloadedDesc(lang: AppLanguage) = if (lang == AppLanguage.BN) "ট্রাফিক ছাড়া পিং" else "Ping with no traffic"
+    fun loadedDesc(lang: AppLanguage) = if (lang == AppLanguage.BN) "ডাটা চলাকালীন পিং" else "Ping under load"
+    fun download(lang: AppLanguage) = if (lang == AppLanguage.BN) "ডাউনলোড" else "Download"
+    fun upload(lang: AppLanguage) = if (lang == AppLanguage.BN) "আপলোড" else "Upload"
+    fun client(lang: AppLanguage) = if (lang == AppLanguage.BN) "ক্লায়েন্ট" else "Client"
+    fun server(lang: AppLanguage) = if (lang == AppLanguage.BN) "সার্ভার" else "Server"
+    fun isp(lang: AppLanguage) = if (lang == AppLanguage.BN) "আইএসপি (ISP)" else "ISP"
+    fun location(lang: AppLanguage) = if (lang == AppLanguage.BN) "লোকেশন" else "Location"
+    fun ipAddress(lang: AppLanguage) = if (lang == AppLanguage.BN) "আইপি অ্যাড্রেস" else "IP Address"
+    fun testAgain(lang: AppLanguage) = if (lang == AppLanguage.BN) "আবার পরীক্ষা করুন" else "Test Again"
+    fun share(lang: AppLanguage) = if (lang == AppLanguage.BN) "শেয়ার করুন" else "Share"
+    fun history(lang: AppLanguage) = if (lang == AppLanguage.BN) "টেস্ট হিস্ট্রি" else "Test History"
+    fun settings(lang: AppLanguage) = if (lang == AppLanguage.BN) "সেটিংস" else "Settings"
+    fun clearHistory(lang: AppLanguage) = if (lang == AppLanguage.BN) "হিস্ট্রি মুছুন" else "Clear History"
+    fun noHistory(lang: AppLanguage) = if (lang == AppLanguage.BN) "এখনও কোনো হিস্ট্রি নেই" else "No test history yet"
+    fun measuringDownload(lang: AppLanguage) = if (lang == AppLanguage.BN) "ডাউনলোড স্পিড মাপা হচ্ছে..." else "Testing download speed..."
+    fun measuringUpload(lang: AppLanguage) = if (lang == AppLanguage.BN) "আপলোড স্পিড মাপা হচ্ছে..." else "Testing upload speed..."
+    fun connecting(lang: AppLanguage) = if (lang == AppLanguage.BN) "সার্ভারের সাথে সংযোগ হচ্ছে..." else "Connecting to server..."
+    fun completed(lang: AppLanguage) = if (lang == AppLanguage.BN) "স্পিড টেস্ট সম্পন্ন হয়েছে" else "Speed test completed"
+    fun parallelStreams(lang: AppLanguage) = if (lang == AppLanguage.BN) "প্যারালাল স্ট্রিম সংখ্যা" else "Parallel Connections"
+    fun duration(lang: AppLanguage) = if (lang == AppLanguage.BN) "টেস্টের সময়কাল" else "Test Duration"
+    fun dataTransferred(lang: AppLanguage) = if (lang == AppLanguage.BN) "ব্যবহৃত ডাটা" else "Data Transferred"
+    fun connection(lang: AppLanguage) = if (lang == AppLanguage.BN) "নেটওয়ার্কের ধরন" else "Network Type"
+    fun privacy(lang: AppLanguage) = if (lang == AppLanguage.BN) "গোপনীয়তা (Privacy)" else "Privacy"
+    fun privacyTitle(lang: AppLanguage) = if (lang == AppLanguage.BN) "SPEEDNEXT গোপনীয়তা নীতি" else "SPEEDNEXT Privacy Policy"
+    fun privacyContent(lang: AppLanguage) = if (lang == AppLanguage.BN)
+        "SPEEDNEXT আপনার ব্রডব্যান্ড বা মোবাইল ইন্টারনেটের রিয়েল-টাইম গতি সরাসরি মাপতে সাহায্য করে। কোনো ব্যক্তিগত তথ্য যেমন নাম বা পাসওয়ার্ড সংগ্রহ করা হয় না। শুধুমাত্র আইপি অ্যাড্রেস এবং নেটওয়ার্ক ডাটা ট্রাফিক টেস্টের কাজে ব্যবহৃত হয়।"
+    else
+        "SPEEDNEXT speed test provides an estimate of your current Internet speed. We run this speed test through high-speed distributed servers. No personally identifiable information is collected or sold."
+    fun aboutTitle(lang: AppLanguage) = if (lang == AppLanguage.BN) "SPEEDNEXT কীভাবে কাজ করে?" else "How does SPEEDNEXT work?"
+    fun aboutContent(lang: AppLanguage) = if (lang == AppLanguage.BN)
+        "SPEEDNEXT সরাসরি একাধিক সিডিএন এবং ক্লাউড সার্ভার থেকে ডাটা প্যাকেট আদান-প্রদান করে আপনার ডাউনলোড ও আপলোড স্পিড নির্ণয় করে। এছাড়াও এটি আনলোডেড ও লোডেড উভয় অবস্থায় পিং (Latency) পরিমাপ করে আপনার আইএসপির গুণগত মান দেখায়।"
+    else
+        "SPEEDNEXT estimates your upload and download speeds by performing multiple streams of data downloads and uploads to global servers. It measures unloaded ping (baseline latency) and loaded ping (latency while streaming/downloading) so you can see if your connection suffers from bufferbloat."
+    fun langName(lang: AppLanguage) = if (lang == AppLanguage.BN) "বাংলা (BD)" else "English (US)"
+}

@@ -1,0 +1,28 @@
+package com.example.data.local
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+
+@Database(entities = [SpeedTestRecord::class], version = 1, exportSchema = false)
+abstract class SpeedTestDatabase : RoomDatabase() {
+    abstract fun speedTestDao(): SpeedTestDao
+
+    companion object {
+        @Volatile
+        private var INSTANCE: SpeedTestDatabase? = null
+
+        fun getDatabase(context: Context): SpeedTestDatabase {
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    SpeedTestDatabase::class.java,
+                    "speed_test_database"
+                ).fallbackToDestructiveMigration().build()
+                INSTANCE = instance
+                instance
+            }
+        }
+    }
+}

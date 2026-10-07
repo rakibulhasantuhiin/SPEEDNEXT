@@ -1,0 +1,6 @@
+{
+  "name": "SPEEDNEXT",
+  "description": "Minimalist real-time internet speed test with live download, upload, latency, and network details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
