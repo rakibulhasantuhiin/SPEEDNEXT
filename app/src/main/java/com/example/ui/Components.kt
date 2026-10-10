@@ -545,10 +545,10 @@ fun HelpCircleButton(
 }
 
 /**
- * "POWERED BY SPEEDNEXT" footer brand from the screenshot.
+ * "POWERED BY TUHINEXT" footer brand badge.
  */
 @Composable
-fun PoweredBySpeedNextBadge(
+fun PoweredByTuhiNextBadge(
     modifier: Modifier = Modifier,
     isDark: Boolean = false
 ) {
@@ -565,7 +565,7 @@ fun PoweredBySpeedNextBadge(
             color = if (isDark) Color(0xFF888888) else Color(0xFF737373)
         )
         Text(
-            text = "SPEED",
+            text = "TUHI",
             fontSize = 15.sp,
             fontWeight = FontWeight.Black,
             letterSpacing = 0.5.sp,

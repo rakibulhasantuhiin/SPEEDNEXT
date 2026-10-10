@@ -290,14 +290,14 @@ fun FastSpeedScreen(
             Spacer(modifier = Modifier.weight(1f, fill = false))
             Spacer(modifier = Modifier.height(48.dp))
 
-            // Bottom Right "POWERED BY SPEEDNEXT" Badge
+            // Bottom Right "POWERED BY TUHINEXT" Badge
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 24.dp, vertical = 16.dp),
                 contentAlignment = Alignment.CenterEnd
             ) {
-                PoweredBySpeedNextBadge(isDark = state.isDarkMode)
+                PoweredByTuhiNextBadge(isDark = state.isDarkMode)
             }
         }
 
